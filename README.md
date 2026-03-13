@@ -1,4 +1,4 @@
-# Julius de Waal Model Catalogue
+# [Julius de Waal Model Catalogue](https://non-bin.github.io/juliusDeWaal/)
 
 Models are metric unless otherwise specified in the Notes column
 Make sure to check the Issues column
@@ -7,9 +7,16 @@ I've input all this data manually and to the best of my knowledge of steam engin
 
 ## Layout
 
-`catalog.csv` has data about each drawing
-`drawings/` contains all the drawings, named with their `Project No` as in the catalog
-`thumbnails/` contains preview images, named with their `Project No` as in the catalog
+[./catalog.csv](catalog.csv) has data about each drawing  
+[./drawings/](drawings/) contains all the drawings, named with their `Project No` as in the catalog  
+[./thumbnails/](thumbnails/) contains preview images, named with their `Project No` as in the catalog
+
+## Sources
+
+https://www.modelesavapeur.com  
+https://www.modelismeenpolynesie.com  
+https://www.vapeuretmodelesavapeur.com  
+https://www.modelengineeringwebsite.com
 
 ## Progress
 
