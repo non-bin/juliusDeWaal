@@ -22,19 +22,45 @@ https://www.modelengineeringwebsite.com
 
 The live spreadsheet can be found [here](https://docs.google.com/spreadsheets/d/1T9bU-pIu0uPjZjIc4qJgrraPnAQn-d8j8YymiJNhWZQ/edit?usp=sharing)
 
-I have completed up to `09D-22-00`, and I have added all files to the spreadsheet from the following directories:
+I have completed up to `09D-22-00`, and I have added all files to the repo from the following directories:
 
 - www.modelesavapeur.com
-  - telechargements9
+  - accueil
+  - alainbersillon
+  - albumphoto
+  - albums
+  - albumsdemesamis
+  - construire
+  - contactavis
+  - \_frame
+  - groupederubrique
+  - introduction
+  - \_iserv
   - mapage
-  - telechargements8
-  - telechargements1
+  - modelismeclassiu
   - telecharements10
   - telechargemennts
   - telechargemens7j
-  - telechargement7
-  - telechargements0
   - telechargement5
+  - telechargement7
+  - telechargement8j
+  - telechargements0
+
+Still to do:
+
+- www.modelesavapeur.com
+  - telechargements1
+  - telechargements2
+  - telechargements3
+  - telechargements4
+  - telechargements5
+  - telechargements6
+  - telechargements7
+  - telechargements8
+  - telechargements9
+- https://www.modelismeenpolynesie.com
+- https://www.vapeuretmodelesavapeur.com
+- https://www.modelengineeringwebsite.com
 
 I have emailed Julius and James the maintainer of modelesavapeur, but I'm yet to receive a response with a better source of drawings, so I used the following command to download every file linked to on the website
 
