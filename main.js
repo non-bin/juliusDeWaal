@@ -64,9 +64,9 @@ function updateTableBody(bodyData) {
   bodyData.forEach((row) => {
     const tr = document.createElement('tr');
     tr.appendChild(document.createElement('td')).innerHTML =
-      `<a href="./drawings/${row[0]}.pdf" target="_blank"><span class="icon"><i class="mdi mdi-open-in-new"></i></span></a>`;
+      `<a href="https://media.githubusercontent.com/media/non-bin/juliusDeWaal/refs/heads/main/drawings/${row[0]}.pdf" target="_blank"><span class="icon"><i class="mdi mdi-open-in-new"></i></span></a>`;
     tr.appendChild(document.createElement('td')).innerHTML =
-      `<img class="thumbnail" src="./thumbnails/${row[0]}.png" alt="Thumbnail">`;
+      `<img class="thumbnail" src="https://media.githubusercontent.com/media/non-bin/juliusDeWaal/refs/heads/main/thumbnails/${row[0]}.png" alt="Thumbnail">`;
     row.forEach((cell) => {
       const td = document.createElement('td');
       td.textContent = cell;
