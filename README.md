@@ -1,5 +1,7 @@
 # [Julius de Waal Model Catalogue](https://non-bin.github.io/juliusDeWaal/)
 
+[Open search tool](https://non-bin.github.io/juliusDeWaal/searchTool.html)
+
 Models are metric unless otherwise specified in the Notes column
 Make sure to check the Issues column
 Some pdfs contain multiple consecutive projects
