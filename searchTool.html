@@ -10,11 +10,37 @@
     <section class="section">
       <div class="container">
         <h1 class="title">Julius De Waal Archive</h1>
-        <div class="table-container">
-          <table class="table is-striped is-narrow is-hoverable is-bordered">
-            <thead id="table-header"></thead>
-            <tbody id="table-body"></tbody>
-          </table>
+
+        <div class="box">
+          <div class="dropdown" id="columns-dropdown">
+            <div class="dropdown-trigger">
+              <button
+                class="button"
+                id="columns-dropdown-trigger"
+                aria-haspopup="true"
+                aria-controls="columns-dropdown-menu"
+              >
+                <span>Columns</span>
+                <span class="icon is-small">
+                  <i class="mdi mdi-chevron-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="columns-dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item"> Overview </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="table-container">
+            <table class="table is-striped is-narrow is-hoverable is-bordered">
+              <thead id="table-header"></thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>

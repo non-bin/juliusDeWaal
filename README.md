@@ -2,11 +2,11 @@
 
 [Open search tool](https://non-bin.github.io/juliusDeWaal/searchTool.html)
 
-Models are metric unless otherwise specified in the Notes column
-Make sure to check the Issues column
-Some pdfs contain multiple consecutive projects, I have split them where I can
-I've input all this data manually and to the best of my knowledge of steam engine, so I'm sorry if I made any mistakes
-I've used the Project No from the drawings where available, or if something like a project number is in the file name, otherwise I fall back to the drawing number (which is put in AKA otherwise). I had to make up an identifier for the one I called ""SCOTCH-YOKE-4"" using the original file name
+Models are metric unless otherwise specified in the Notes column  
+Make sure to check the Issues column  
+Some pdfs contain multiple consecutive projects, I have split them where I can  
+I've input all this data manually and to the best of my knowledge of steam engine, so I'm sorry if I made any mistakes  
+I've used the Project No from the drawings where available, or if something like a project number is in the file name, otherwise I fall back to the drawing number (which is put in AKA otherwise). I had to make up an identifier for the one I called "SCOTCH-YOKE-4" using the original file name
 
 ## Layout
 
@@ -31,13 +31,13 @@ I have emailed Julius, and James (the maintainer of modelesavapeur), but I'm yet
 
 ```bash
 wget \
- --continue \ # Resume an interrupted download
- --recursive \ # Follow links to more files and pages, and follow links in those pages etc
- --level=inf \ # Keep recursing forever
- --convert-links \ # Change links in the downloaded pages to point to downloaded files and pages
- --adjust-extension \ # Give files the correct extension for their MIME type
- --span-hosts \ # Don't restrict the search to just the starting domain
- --domains "www.modelesavapeur.com,www.modelismeenpolynesie.com" \ # Restrict the search to only these domains
- --restrict-file-names=windows \ # Don't create illegal file names
+ --continue `# Resume an interrupted download` \
+ --recursive `# Follow links to more files and pages, and follow links in those pages etc` \
+ --level=inf `# Keep recursing forever` \
+ --convert-links `# Change links in the downloaded pages to point to downloaded files and pages` \
+ --adjust-extension `# Give files the correct extension for their MIME type` \
+ --span-hosts `# Don't restrict the search to just the starting domain` \
+ --domains "www.modelesavapeur.com,www.modelismeenpolynesie.com" `# Restrict the search to only these domains` \
+ --restrict-file-names=windows `# Don't create illegal file names` \
  https://www.modelesavapeur.com # Start here
 ```
