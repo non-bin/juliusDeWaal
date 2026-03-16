@@ -25,7 +25,7 @@ https://www.modelengineeringwebsite.com
 
 The live spreadsheet can be found [here](https://docs.google.com/spreadsheets/d/1T9bU-pIu0uPjZjIc4qJgrraPnAQn-d8j8YymiJNhWZQ/edit?usp=sharing)
 
-I have added all files that I've found to this repo, and I have completed all the details up to `09D-22-00`
+I have added all files that I've found to this repo, and I have completed all the details up to `10-27-00`
 
 I have emailed Julius, and James (the maintainer of modelesavapeur), but I'm yet to receive a response with a better source of drawings, so I used the following command to download every file linked to on the website
 
