@@ -39,5 +39,5 @@ wget \
  --span-hosts `# Don't restrict the search to just the starting domain` \
  --domains "www.modelesavapeur.com,www.modelismeenpolynesie.com" `# Restrict the search to only these domains` \
  --restrict-file-names=windows `# Don't create illegal file names` \
- https://www.modelesavapeur.com # Start here
+ https://www.modelesavapeur.com `# Start here`
 ```
