@@ -8,3 +8,43 @@ img.thumbnail {
   width: auto;
   height: auto;
 }
+
+.thumbnails div {
+  height: 230px;
+}
+
+table {
+  table-layout: fixed;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
+  width: max-content;
+}
+
+td {
+  padding: 0;
+  position: relative;
+}
+
+td > div {
+  max-width: 100ch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 100%;
+}
+
+a.dropdown-item.is-visible,
+button.dropdown-item.is-visible {
+  --bulma-dropdown-item-h: var(--bulma-dropdown-item-selected-h);
+  --bulma-dropdown-item-s: 42%;
+  --bulma-dropdown-item-l: var(--bulma-dropdown-item-selected-l);
+  --bulma-dropdown-item-background-l: 38%;
+  --bulma-dropdown-item-color-l: var(--bulma-dropdown-item-selected-color-l);
+}
+
+a.dropdown-item.is-filtered,
+button.dropdown-item.is-filtered {
+  --bulma-dropdown-item-s: 0%;
+}
