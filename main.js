@@ -11,7 +11,7 @@ const columnDropdownContent = document.getElementById('columns-dropdown-menu');
 let debug;
 
 /**
- * @type {{category: string, name: string, visible: boolean, filtered: boolean, originalIndex: number, special: string|null, dropdownElement: HTMLAnchorElement}[]}
+ * @type {{category: string, name: string, visible: boolean, filtered: boolean, originalIndex: number, type: string, dropdownElement: HTMLAnchorElement}[]}
  */
 let columns = [];
 
@@ -82,11 +82,12 @@ const loadTableBody = () => {
       `<a href="${RESOURCE_BASE_URL}/drawings/${row.data[0]}.pdf" target="_blank"><span class="icon"><i class="mdi mdi-open-in-new"></i></span></a>`;
     for (let i = 0; i < columns.length; i++) {
       const td = document.createElement('td');
-      if (columns[i].special === 'thumbnail')
+      if (columns[i].type === 'thumbnail')
         td.innerHTML = `<img class="thumbnail" src="${RESOURCE_BASE_URL}/thumbnails/${row.data[0]}.png" alt="Thumbnail">`;
-      else if (columns[i].special === 'link')
-        td.innerHTML = `<a href="${row.data[columns[i].originalIndex]}" target="_blank"><span class="icon"><i class="mdi mdi-open-in-new"></i></span></a>`;
-      else {
+      else if (columns[i].type === 'link') {
+        if (row.data[columns[i].originalIndex])
+          td.innerHTML = `<a href="${row.data[columns[i].originalIndex]}" target="_blank"><span class="icon"><i class="mdi mdi-open-in-new"></i></span></a>`;
+      } else {
         const div = td.appendChild(document.createElement('div'));
         div.textContent = row.data[columns[i].originalIndex];
       }
@@ -146,7 +147,7 @@ const updateRowFiltering = (event) => {
  */
 const updateColumnFiltering = () => {
   columns.forEach((column) => {
-    if (column.special === 'thumbnail') {
+    if (column.type === 'thumbnail') {
       column.filtered = false;
       return;
     }
@@ -217,15 +218,15 @@ Papa.parse('./catalog.csv', {
       visible: false,
       filtered: false,
       originalIndex: -1,
-      special: 'thumbnail',
+      type: 'thumbnail',
     });
     let category = null;
     for (let i = 0; i < results.data[1].length; i++) {
       category = results.data[0][i] || category || 'Uncategorized';
 
       const columnName = results.data[1][i].toLowerCase();
-      let special = null;
-      if (columnName.includes('link') || columnName.includes('video')) special = 'link';
+      let type = 'text';
+      if (columnName.includes('link') || columnName.includes('video')) type = 'link';
       if (
         columnName.includes('height')
         || columnName.includes('length')
@@ -233,8 +234,8 @@ Papa.parse('./catalog.csv', {
         || columnName.includes('bore')
         || columnName.includes('stroke')
       )
-        special = 'length';
-      if (columnName.includes('volume')) special = 'volume';
+        type = 'length';
+      if (columnName.includes('volume')) type = 'volume';
 
       columns.push({
         category,
@@ -242,7 +243,7 @@ Papa.parse('./catalog.csv', {
         visible: true,
         filtered: false,
         originalIndex: i,
-        special,
+        type,
       });
     }
 
